@@ -36,17 +36,16 @@ has_to_be_a_number() {
 pkgs=(
     "boot           linux{,-firmware} base grub networkmanager"
 
-    "main           linux-{zen,firmware,zen-headers} dkms base{,-devel} grub networkmanager git man-{db,pages} pkgfile pacman-contrib fish starship"
-    "xorg           xorg-{xinit,server,xset,xsetroot} xwallpaper xgetres"
+    "main           linux-{zen,firmware,zen-headers} dkms base{,-devel} grub networkmanager git"
+	"qof			man-{db,pages} pkgfile pacman-contrib fish"
+    "xorg           xorg-{xinit,server,xset,xsetroot} xwallpaper xgetres xsettingsd"
     "sound          pipewire{,-alsa,-pulse,-jack} pulsemixer mpd ncmpcpp mpc"
-    "wm             bspwm sxhkd rofi pcmanfm-gtk3 udiskie transmission-gtk unclutter wmname xclip maim bc engrampa p7zip unrar unace keepassxc imv mpv firefox papirus-icon-theme xcursor-vanilla-dmz slock zathura{,-ps,-pdf-mupdf,djvu,cb}"
-    "fonts          terminus-font noto-fonts ttf-{joypixels,ionicons}"
+    "wm             bspwm sxhkd rofi pcmanfm-gtk3 udiskie transmission-gtk unclutter wmname xclip maim bc engrampa p7zip unrar unace keepassxc imv mpv firefox papirus-icon-theme xcursor-vanilla-dmz slock zathura{,-ps,-pdf-mupdf}"
+    "fonts          terminus-font ttf-ibm-plex ttf-joypixels"
     "dev            neovim nodejs yarn python{,-pynvim}"
     "fs_utils       ffmpegthumbnailer gvfs gvfs-gphoto2 gvfs-mtp trash-cli"
-    "social         telegram-desktop discord"
 
-    # xst, 
-
+    # xst,
     # "apps_base    lxsession-gtk3 lxappearance-gtk3 lxinput-gtk3"
     # "apps         libreoffice-fresh"
     # "remote       tmate openssh"

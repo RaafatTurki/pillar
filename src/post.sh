@@ -55,6 +55,7 @@ else
     grub-install --target=i386-pc /dev/$root_disk
 fi
 sed -i "s/GRUB_TIMEOUT=1/GRUB_TIMEOUT=2/" /etc/default/grub
+sed -i "s/#GRUB_GFXMODE=auto/GRUB_GFXMODE=1920x1080x32/" /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # User
