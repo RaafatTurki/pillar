@@ -5,6 +5,9 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cp -f /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 cp -f ./assets/pacman.conf /mnt/etc/pacman.conf
 
+# Setting automatic username entry on tty1
+cp -R ./assets/getty@tty1.service.d /etc/systemd/system/
+
 # Setting tearfree nvidia xorg configs
 if $ok_nvidia ;then
   mkdir -p /etc/X11/xorg.conf.d
@@ -45,6 +48,8 @@ echo :D > /etc/issue
 # Services
 systemctl enable NetworkManager.service
 systemctl enable systemd-timesyncd.service
+systemctl enable avahi-daemon.service
+systemctl enable paccache.timer
 # systemctl enable systemd-homed.service
 
 # Grub
