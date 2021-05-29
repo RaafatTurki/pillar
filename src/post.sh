@@ -6,7 +6,10 @@ cp -f /etc/pacman.d/mirrorlist /mnt/etc/pacman.d/mirrorlist
 cp -f ./assets/pacman.conf /mnt/etc/pacman.conf
 
 # Setting automatic username entry on tty1
-cp -R ./assets/getty@tty1.service.d /etc/systemd/system/
+cp -fR ./assets/getty@tty1.service.d /etc/systemd/system/
+
+# Setting pam configs
+cp -fR ./assets/faillock.conf /etc/security/
 
 # Setting tearfree nvidia xorg configs
 if $ok_nvidia ;then
