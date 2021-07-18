@@ -34,15 +34,15 @@ has_to_be_a_number() {
 
 # Packages
 pkgs=(
-    "boot           linux{,-firmware} base grub networkmanager"
+    "boot           linux linux-firmware base grub networkmanager"
 
-    "main           linux-{zen,firmware,zen-headers} dkms base{,-devel} grub networkmanager git"
-	"qof			man-{db,pages} pkgfile pacman-contrib fish"
-    "xorg           xorg-{xinit,server,xset,xsetroot} xwallpaper xgetres xsettingsd"
-    "sound          pipewire{,-alsa,-pulse,-jack} pulsemixer mpd ncmpcpp mpc"
+    "main           linux-zen linux-firmware linux-zen-headers dkms base base-devel grub networkmanager git"
+	"qof			man-db man-pages pkgfile pacman-contrib fish usbutils"
+    "xorg           xorg-xinit xorg-server xorg-xset xorg-xsetroot xwallpaper xgetres xsettingsd"
+    "sound          pipewire pipewire-alsa pipewire-pulse pipewire-jack pulsemixer mpd ncmpcpp mpc"
     "wm             bspwm sxhkd rofi pcmanfm-gtk3 udiskie transmission-gtk unclutter wmname xclip maim bc engrampa p7zip unrar unace keepassxc imv mpv firefox papirus-icon-theme xcursor-vanilla-dmz slock zathura{,-ps,-pdf-mupdf}"
     "fonts          terminus-font ttf-ibm-plex ttf-joypixels"
-    "dev            neovim nodejs yarn python{,-pynvim}"
+    "dev	        neovim nodejs yarn python python-pynvim xclip"
     "fs_utils       ffmpegthumbnailer gvfs gvfs-gphoto2 gvfs-mtp trash-cli"
 
     # xst,
