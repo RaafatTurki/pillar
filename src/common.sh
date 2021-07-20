@@ -40,7 +40,7 @@ pkgs=(
 	"qof			man-db man-pages pkgfile pacman-contrib fish usbutils"
     "xorg           xorg-xinit xorg-server xorg-xset xorg-xsetroot xwallpaper xgetres xsettingsd"
     "sound          pipewire pipewire-alsa pipewire-pulse pipewire-jack pulsemixer mpd ncmpcpp mpc"
-    "wm             bspwm sxhkd rofi pcmanfm-gtk3 udiskie transmission-gtk unclutter wmname xclip maim bc engrampa p7zip unrar unace keepassxc imv mpv firefox papirus-icon-theme xcursor-vanilla-dmz slock zathura{,-ps,-pdf-mupdf}"
+    "wm             bspwm sxhkd rofi pcmanfm-gtk3 udiskie transmission-gtk unclutter wmname xclip maim bc engrampa p7zip unrar unace keepassxc imv mpv firefox papirus-icon-theme xcursor-vanilla-dmz slock zathura-ps zathura-pdf zathura-mupdf"
     "fonts          terminus-font ttf-ibm-plex ttf-joypixels"
     "dev	        neovim nodejs yarn python python-pynvim xclip"
     "fs_utils       ffmpegthumbnailer gvfs gvfs-gphoto2 gvfs-mtp trash-cli"
